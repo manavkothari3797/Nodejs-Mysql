@@ -1,0 +1,41 @@
+{
+  "name": "node-sql",
+  "version": "1.0.0",
+  "description": "This is node demo code using sequelize",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js",
+    "kill-port": "killall node",
+    "lint": " ./node_modules/.bin/eslint ./src/*/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=10.16.3",
+    "npm": ">=6.9.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "convert-excel-to-json": "^1.6.1",
+    "convict": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "node": "^13.6.0",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
