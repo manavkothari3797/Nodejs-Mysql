@@ -15,7 +15,8 @@ const SUCCESS = {
   OK: 'OK',
   AUTH_SUCCESS: 'Authentication successful!',
   LOGOUT: 'Successfully logout',
-  ADMIN_CREATED: 'Admin registered successfully'
+  ADMIN_CREATED: 'Admin registered successfully',
+  FILE_UPLOADED: 'File uploaded successfully'
 };
 
 module.exports = { ERROR, SUCCESS };

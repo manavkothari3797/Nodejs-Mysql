@@ -9,6 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       email: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       company: {
@@ -20,13 +21,19 @@ module.exports = {
       lastName: {
         type: Sequelize.STRING
       },
+      whenChanged: {
+        type: Sequelize.DATE
+      },
+      whenCreated: {
+        type: Sequelize.DATE
+      },
       department: {
         type: Sequelize.STRING
       },
       title: {
         type: Sequelize.STRING
       },
-      intials: {
+      initials: {
         type: Sequelize.STRING
       },
       createdAt: {
@@ -39,7 +46,7 @@ module.exports = {
       }
     });
   },
-  down: (queryInterface, Sequelize) => {
+  down: queryInterface => {
     return queryInterface.dropTable('Users');
   }
 };
